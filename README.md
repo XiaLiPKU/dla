@@ -39,6 +39,25 @@ python3 classify.py train <data_folder> -a dla34 --data-name new_data \
     --classes 2 --pretrained imagenet --lr 0.01
 ```
 
+We also provide ImageNet pretrained models. You can find their performance below, where "+tricks" means training using [bag of tricks](https://arxiv.org/abs/1812.01187).
+| Network         | Top-1  | Top-5  |
+| :-------------: | :----: | :----: |
+| dla46_c         | 64.870 | 86.294 |
+| dla46x_c        | 65.976 | 86.988 |
+| dla60x_c        | 67.912 | 88.418 |
+| dla34           | 74.624 | 92.062 |
+| dla34+tricks    | 76.484 | 93.142 |
+| dla60           | 77.036 | 93.324 |
+| dla102          | 78.030 | 93.952 |
+| dla60x          | 78.250 | 94.024 |
+| dla102x         | 78.510 | 94.230 |
+| dla169          | 78.694 | 94.330 |
+| dla60+tricks    | 79.056 | 94.486 |
+| dla102x2        | 79.442 | 94.646 |
+| dla102+tricks   | 79.498 | 94.762 |
+| dla102x2+tricks | 80.154 | 94.748 |
+          
+
 ## Segmentation and Boundary Prediction
 
 Segmentation and boundary prediction data format is the same as
